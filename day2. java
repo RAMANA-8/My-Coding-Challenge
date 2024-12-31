@@ -1,0 +1,45 @@
+import java.util.*;
+
+class Person{
+	static int age = 15;
+	static float height;
+	String name;
+	
+	Person(){
+		height = 4.1f;
+		name = "Sabarish";
+	}
+	
+	public static void increaseAge(){
+		age++;
+	}
+	
+	public static void increaseHeight(){
+		height++;
+	}
+}
+
+
+public class Main {
+    public static void main(String args[]){
+        Scanner inp = new Scanner(System.in);
+		//-----------------------------------------
+		Person p1 = new Person();
+		System.out.println(p1.age);
+		System.out.println(p1.height);
+		
+		p1.increaseAge();
+		p1.increaseHeight();
+		
+		System.out.println(p1.age);
+		System.out.println(p1.height);
+		System.out.println("-".repeat(30));
+		//-------------------------------------------
+		
+		Person p2 = new Person();
+		System.out.println(p2.age);
+		System.out.println(p2.height);
+		
+        inp.close();  
+    }
+}
